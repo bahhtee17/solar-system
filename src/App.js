@@ -1,19 +1,22 @@
-import React, {useState} from "react";
+import React from "react";
 import Home from "./Home";
-import Sun from "./componets/Sun";
 import {Route, Routes, useLocation} from "react-router-dom";
-import Header from "./Header";
+import Header from "./componets/UI/Header";
+import "./App.css";
+import Sun from "./componets/Sun";
 
 function App() {
   const location = useLocation();
   return (
-    <div>
+    <>
+      <Header />
       {location.pathname === "/" ? <Home /> : null}
       <Routes>
+        <Route path='sun' element={<Sun />} />
         <Route path='/home' element={<Home />} />
         <Route path='/header' element={<Header />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

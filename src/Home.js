@@ -1,16 +1,17 @@
 import {useNavigate} from "react-router-dom";
+import Card from "./componets/UI/Card";
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <Card>
       This is Home Page{" "}
       <button
         onClick={() => {
-          navigate("/header");
+          navigate("/sun");
         }}>
-        to Header
+        to Sun
       </button>
-    </div>
+    </Card>
   );
 };
 
