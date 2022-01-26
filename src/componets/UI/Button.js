@@ -2,11 +2,9 @@ import React from "react";
 
 const Button = (props) => {
   return (
-    <div>
-      <button onClick={props.onClick} className={props.className}>
-        {props.title}
-      </button>
-    </div>
+    <a onClick={props.onClick} className={props.container}>
+      <img className={props.className} src={props.src} />
+    </a>
   );
 };
 

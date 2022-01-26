@@ -1,6 +1,8 @@
 import {useNavigate} from "react-router-dom";
 import Button from "./componets/UI/Button";
 import "./Home.css";
+import planet from "./componets/UI/planet.png";
+
 const Home = () => {
   const navigate = useNavigate();
   return (
@@ -31,12 +33,16 @@ const Home = () => {
           navigate("/earth");
         }}
       />
+
       <Button
-        title='Mars'
+        container='container'
+        className='img'
+        src={planet}
         onClick={() => {
           navigate("/mars");
         }}
       />
+
       <Button
         title='Jupiter'
         onClick={() => {
