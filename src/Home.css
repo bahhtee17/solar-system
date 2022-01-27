@@ -2,12 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.img {
+.imgEarth {
   width: 30%;
 }
 
-.img:hover {
+.imgEarth:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.imgSun {
+  width: 50%;
+}
+
+.imgSun:hover {
   transform: scale(1.1, 1.1);
 }
 
