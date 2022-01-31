@@ -1,7 +1,9 @@
 import React from "react";
+import useFetch from "../hooks/useFetch";
 
 const Sun = () => {
-  return <div>This is Sun</div>;
+  const {planets, isLoading, error} = useFetch();
+  return <></>;
 };
 
 export default Sun;

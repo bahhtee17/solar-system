@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  color: gray;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.sub-container {
+  width: 60%;
+}
+
+.sub-container h2 {
+  letter-spacing: 0.3em;
+  font-weight: 100;
+  color: gray;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.sub-container p {
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  color: grey;
+  margin-bottom: 7%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.earthImg {
+  width: 30%;
+}
+
+.moonImg {
+  width: 10%;
+}
+
+.planetContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backButton {
+  border: none;
+  padding: 0.5em;
+  margin-top: 1em;
+  position: relative;
+  right: 47%;
+  width: 6em;
+  background-color: antiquewhite;
+}
